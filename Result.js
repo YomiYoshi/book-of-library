@@ -1,3 +1,4 @@
+/* hanberger icon */
 function toggleHamburgerIcon(el) { //เปลี่ยน icon จาก 3 เส้นเป็น X
     el.classList.toggle("change");
 }

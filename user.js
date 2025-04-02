@@ -1,5 +1,6 @@
 const BASE_URL = 'http://localhost:8000'
 
+/* humburger icon */
 function toggleHamburgerIcon(el) { //เปลี่ยน icon จาก 3 เส้นเป็น X
   el.classList.toggle("change");
 }

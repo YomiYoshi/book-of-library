@@ -8,7 +8,7 @@
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('library2.jpg');
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; /* ไม่ให้ภาพพื้นหลังซ้ำ */
         width: 100vw; /* ครอบคลุมความกว้างของหน้าจอ */
         height: 100vh; /* ครอบคลุมความสูงของหน้าจอ */
         margin: 0; /* ลบระยะขอบ */
