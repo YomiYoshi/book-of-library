@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('./Kanit/Kanit-Regular.ttf');
+  }
+
+  body { //เปลี่ยนสีพื้นหลังหน้าเว็บ
+    font-family: 'Kanit';
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('library2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;    /* ทำให้รูปอยู่ตรงกลางตามขนาดหน้าจอ */
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    padding: 10px 20px;
+    color: white;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+  }
+
+  .logo {
+    font-family: 'Kanit';
+    font-size: 25px;
+    margin-left: 25px;
+    font-weight: bold;
+  }
+
+  .logo .material-icons {
+    vertical-align: middle;
+    font-size: 35px;
+    margin-right: 8px;
+  }
+
+  .navbar ul {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    list-style: none;
+  }
+
+  .navbar a {
+    font-family: 'Kanit';
+    height: 100%;
+    padding: 0 10px;
+    margin-right: 80px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+.navbar a:hover {
+    padding: auto;
+    background-color: #333;
+    transition: 0.5s;
+}
+
+.container-main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.container {
+  font-family: 'Kanit', sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  blackground-size: cover;
+  color: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+  width: 100%;
+  margin: auto 50px;
+}
+
+.owl1 {
+  background: url('total_book/picture1.jpg');
+  border:1px solid #eee;
+  padding:10rem;
+  margin:1rem;
+  border-radius:10px;
+  box-shadow:3px 3px 10px rgba(0,0,0,0.2);
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+}
+
+.owl2 {
+  background: url('total_book/picture2.jpg');
+  border:1px solid #eee;
+  padding:10rem;
+  margin:1rem;
+  border-radius:10px;
+  box-shadow:3px 3px 10px rgba(0,0,0,0.2);
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.owl3 {
+  background: url('total_book/picture8.jpg');
+  border:1px solid #eee;
+  padding:10rem;
+  margin:1rem;
+  border-radius:10px;
+  box-shadow:3px 3px 10px rgba(0,0,0,0.2);
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.owl4 {
+  background: url('total_book/picture11.jpg');
+  border:1px solid #eee;
+  padding:10rem;
+  margin:1rem;
+  border-radius:10px;
+  box-shadow:3px 3px 10px rgba(0,0,0,0.2);
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.owl5 {
+  background: url('total_book/picture19.jpg');
+  border:1px solid #eee;
+  padding:10rem;
+  margin:1rem;
+  border-radius:10px;
+  box-shadow:3px 3px 10px rgba(0,0,0,0.2);
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.owl6 {
+  background: url('total_book/picture24.jpg');
+  border:1px solid #eee;
+  padding:10rem;
+  margin:1rem;
+  border-radius:10px;
+  box-shadow:3px 3px 10px rgba(0,0,0,0.2);
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.owl7 {
+  background: url('total_book/picture 6.jpg');
+  border:1px solid #eee;
+  padding:10rem;
+  margin:1rem;
+  border-radius:10px;
+  box-shadow:3px 3px 10px rgba(0,0,0,0.2);
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.owl8 {
+  background: url('total_book/picture12.jpg');
+  border:1px solid #eee;
+  padding:10rem;
+  margin:1rem;
+  border-radius:10px;
+  box-shadow:3px 3px 10px rgba(0,0,0,0.2);
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.owl9 {
+  background: url('total_book/picture15.jpg');
+  border:1px solid #eee;
+  padding:10rem;
+  margin:1rem;
+  border-radius:10px;
+  box-shadow:3px 3px 10px rgba(0,0,0,0.2);
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.tableback {
+  background-color: #222;
+  display: inline-block;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: auto; 
+  height: auto;
+  left: 85%;
+  margin-top: 20px;
+}
+
+.tableback:hover {
+  background-color: #444;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+/* Hamburger Icon Styling */
+.hamburger-icon {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 70px;
+  top: 15px;
+
+  /* Hides default checkbox */
+  @media only screen and (min-width: 640px) {
+      display: none;
+  }
+}
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {opacity: 0;}
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  @media only screen and (min-width: 640px) {
+    .navbar ul {
+        display: flex !important;
+    }
+}
+  @media only screen and (max-width: 640px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 20px 30px;
+    }
+    .navbar ul {
+        width: 100%;
+        display: none;
+        margin-left: 0;
+        padding: 5px 20px;
+        margin-top: 20px;
+
+    }
+    .navbar a {
+        padding: 10px 0;
+        transition: 0.3s;
+    }
+}
+
+@media screen and (max-width: 640px) {
+  .container{
+      width: 80%;
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+  }
+  .owl1, .owl2, .owl3, .owl4, .owl5, .owl6, .owl7, .owl8, .owl9 {
+    padding: 20px;
+    margin: 30px 0;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+  .header {
+    font-size: 20px;
+}
+}

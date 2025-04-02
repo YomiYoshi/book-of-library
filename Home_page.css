@@ -1,0 +1,179 @@
+    @font-face {
+        font-family: 'Kanit';
+        src: url('./Kanit/Kanit-Regular.ttf');
+    }
+
+
+    body {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('library2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100vw; /* ครอบคลุมความกว้างของหน้าจอ */
+        height: 100vh; /* ครอบคลุมความสูงของหน้าจอ */
+        margin: 0; /* ลบระยะขอบ */
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        font-family: 'Kanit';
+        font-size: 25px;
+        color: white;
+        text-align: center; 
+        display: flex;
+        flex-direction: column; /* จัดเรียงข้อความในแนวตั้ง */
+        justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+        align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */ 
+        height: auto; 
+        margin-top: 50px;
+    }
+    h1 {
+        margin: 0;  
+    }
+
+    .header p {
+        font-size: 15px;
+        color: white;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #111;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        height: 50px;
+        padding: 10px 20px;
+        color: white;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%; 
+    }
+
+    .logo {
+        font-family: 'Kanit';
+        font-size: 25px;
+        margin-left: 25px;
+        font-weight: bold;
+    }
+
+    .logo .material-icons {
+        vertical-align: middle;
+        font-size: 35px;
+        margin-right: 8px;
+    }
+
+    .navbar ul {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        list-style: none;
+    }
+
+    .navbar a {
+        font-family: 'Kanit';
+        height: 100%;
+        padding: 0 10px;
+        margin-right: 80px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    .navbar a:hover {
+        padding: auto;
+        background-color: #333;
+        transition: 0.5s;
+    }
+
+/* Hamburger Icon Styling */
+.hamburger-icon {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 70px;
+    top: 15px;
+
+    /* Hides default checkbox */
+    @media only screen and (min-width: 640px) {
+        display: none;
+    }
+}
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    .Get_Started {
+        font-family: 'Kanit';
+        font-size: 15px;
+        background: white;
+        border-radius: 10px;
+        width: 200px;
+        height: 50px;
+        color: black;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+        transition: 0.5s;
+        margin: 10px;
+    }
+
+    .Get_Started:hover {
+        background: linear-gradient(135deg, #28a745, #218838);
+        color: white;
+    }
+
+    .button a{
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+/* Responsive Navbar small device*/
+@media only screen and (min-width: 640px) {
+    .navbar ul {
+        display: flex !important;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 20px 30px;
+    }
+    .navbar ul {
+        width: 100%;
+        display: none;
+        margin-left: 0;
+        padding: 5px 20px;
+        margin-top: 20px;
+
+    }
+    .navbar a {
+        padding: 10px 0;
+        transition: 0.3s;
+    }
+}

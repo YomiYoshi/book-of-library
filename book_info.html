@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel = "stylesheet" href="book_register.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="material-icons">menu_book</span> Books for Library</div>
+            <div class="hamburger-icon" id="hamIcon" onclick="toggleHamburgerIcon(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="myMenu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="book_info.html">Register</a></li>
+            </ul>
+    </nav>
+    <!--book_register_Form-->
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="header">Book Register Form</div>
+        <div class="flex form-input">
+            <div class="header-form">Title</div>
+            <input class="form" name="title" type="text">
+        </div>
+
+        <div class="flex form-input">
+            <div class="header-form">Author</div>
+            <input class="form" name="author" type="text">
+        </div>
+
+        <div class="flex form-input">
+            <div class="header-form">Publisher</div>
+            <input class="form" name="publisher" type="text">
+        </div>
+
+        <div class="flex time form-input">
+            <div class="header-form">Publisher Year</div>
+            <div class="flex">
+               <input class="form" name="publisher_year" input type="number" >
+            </div>
+        </div>
+        <div class="flex category form-input">
+            <div class="header-form">Category</div>
+            <div class="flex">
+                <div>
+                    <input name="category" type="checkbox" value="Fiction"> Fiction
+                </div>
+                <div>
+                    <input name="category" type="checkbox" value="Non-Fiction"> Non-Fiction
+                </div>
+                <div>
+                    <input name="category" type="checkbox" value="Fantasy"> Fantasy
+                </div>
+                <div>
+                    <input name="category" type="checkbox" value="Romance"> Romance
+                </div>
+                <div>
+                    <input name="category" type="checkbox" value="Drama"> Drama
+                </div>
+                <div>
+                    <input name="category" type="checkbox" value="Comedy"> Comedy
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex form-input">
+            <div class="header-form">ISBN</div>
+              <input class="form" name="isbn" input type="number">
+        </div>
+
+        <div class="flex form-input">
+          <div class="header-form">Page Count</div>
+            <input class="form" name="page_count" input type="number">
+        </div>
+
+        <div id=message class="message"></div>
+
+        <div class="center">
+           <button onclick="submitData()" class="button">ส่งข้อมูล</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>

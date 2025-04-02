@@ -1,0 +1,9 @@
+ls
+pwd // print working directory
+cd // change directory
+cat //print file content
+cd .. // go back 
+exit // exit the container
+docker system prune // remove all stopped container
+docker-compose up -d
+docker-compose down 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="Result.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=undo" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="material-icons">menu_book</span> Books for Library</div>
+            <div class="hamburger-icon" id="hamIcon" onclick="toggleHamburgerIcon(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="myMenu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="book_info.html">Register</a></li>
+            </ul>
+    </nav>
+    <div class="container" data-aos="fade-up" data-aos-duration="1500">
+        <h1 class="header">Borrowed Complete</h1>
+        <p class="explain">Enjoy your fantasy world of reading</p>
+
+        <div class="container-main">
+        <div class="owl-carousel owl-theme">
+            <div class="owl1"></div>
+            <div class="owl2"></div>
+            <div class="owl3"></div>
+            <div class="owl4"></div>
+            <div class="owl5"></div>
+            <div class="owl6"></div>
+            <div class="owl7"></div>
+            <div class="owl8"></div>
+            <div class="owl9"></div>
+        </div>
+        <a = href="user.html"><div class="tableback"><span class="material-symbols-outlined">
+            undo
+            </span></div></a>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="OwlCarousel2/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="Result.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                margin: 10,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+        /*ส่วนนี้คือ CSS */
+        /*ใช้สำหรับเเต่ง (id class)*/
+        @font-face {
+            font-family: 'Kanit';
+            src: url('./Kanit/Kanit-Regular.ttf');
+          }
+        body { //เปลี่ยนสีพื้นหลังหน้าเว็บ
+            font-family: 'Kanit';
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('library2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            margin: 25px 15px;
+            padding-top: 60px;
+            display: block;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #111;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            height: 50px;
+            padding: 10px 20px;
+            color: white;
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%; 
+        }
+        
+        .logo {
+            font-family: 'Kanit';
+            font-size: 25px;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+        .logo .material-icons {
+            vertical-align: middle;
+            font-size: 35px;
+            margin-right: 8px;
+        }
+
+        .navbar ul {
+            margin: 0;
+            height: 100%;
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar a {
+            font-family: 'Kanit';
+            height: 100%;
+            padding: 0 10px;
+            margin-right: 80px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .navbar a:hover {
+            padding: auto;
+            background-color: #333;
+            transition: 0.5s;
+        }
+
+        /* Hamburger Icon Styling */
+        .hamburger-icon {
+            display: inline-block;
+            cursor: pointer;
+            position: absolute;
+            right: 70px;
+            top: 15px;
+
+            /* Hides default checkbox */
+            @media only screen and (min-width: 640px) {
+                display: none;
+            }
+        }
+    
+        .bar1, .bar2, .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #fff;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+  
+        .change .bar1 {
+            transform: translate(0, 11px) rotate(-45deg);
+        }
+  
+        .change .bar2 {opacity: 0;}
+  
+        .change .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+        }
+
+
+        .container {
+            font-family: 'Kanit';
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+            background-size: cover;
+            overflow: hidden;
+            color: white;
+            width: 100%;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 40px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        .header {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+
+        .header-form {
+            width: 140px;
+            front-weight: normal;
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+       
+        .flex {
+            margin-bottom: 10px;
+        }
+        
+        .form-input {
+            margin-bottom: 10px;
+            padding-right: 40px;
+        }
+        input.form , textarea {
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            letter-spacing: 1px;
+            border: 0;
+            border-radius:5px;
+            width: 100%;
+            height: 35px;
+            padding-left: 10px;
+            max-width: 100%;
+        }
+        input.form:hover, textarea:hover {
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
+        .center {
+            text-align: center;
+        }
+        .button {
+            font-family: 'Kanit';
+            font-size: 15px;
+            background: rgb(45, 126 , 231);
+            border-radius: 10px;
+            border: 0;
+            width: 50%;
+            height: 50px;
+            color: white;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            transition: 0.1s;
+        }
+        button:hover {
+            background: #22b14c;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .message {
+            margin-buttom: 10px;
+            padding: 15px;
+            background-color: lightgray;
+            color: black;
+            display: none;
+        }
+        .message.success {
+            background-color: lightgreen;
+            display: block;  
+            margin-bottom: 20px;
+        }
+        .message.danger {
+            background-color: lightcoral;
+            display: block; 
+            margin-bottom: 20px;
+        }
+        /* Responsive Form */
+        @media screen and (max-width: 640px) {
+            .flex {
+                flex-direction: column;
+            }
+            .header {
+                font-size: 24px;
+            }
+            .button {
+                width: 50%;
+            }
+        }
+        
+        /* Responsive Navbar small device*/
+        @media only screen and (min-width: 640px) {
+            .navbar ul {
+                display: flex !important;
+            }
+        }
+        @media only screen and (max-width: 640px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+                padding: 20px 30px;
+            }
+            .navbar ul {
+                width: 100%;
+                display: none;
+                margin-left: 0;
+                padding: 5px 20px;
+                margin-top: 20px;
+
+            }
+            .navbar a {
+                padding: 10px 0;
+                transition: 0.3s;
+            }
+        }

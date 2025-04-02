@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="Home_page.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="material-icons">menu_book</span> Books for Library</div>
+            <div class="hamburger-icon" id="hamIcon" onclick="toggleHamburgerIcon(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="myMenu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="book_info.html">Register</a></li>
+            </ul>
+    </nav>
+    <!--หน้าปก Home-->
+        <div class="header">
+            <h1>Welcome</h1>
+            <h1>To</h1>
+            <h1>Library</h1>
+            <p>Plunge into the wonderful
+                world of reading</p>
+            <div class="button">
+                <a = href="book_info.html"><div class="Get_Started">GET STARTED</div></a>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="Home.js"></script>
+</body>
+</html>
